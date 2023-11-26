@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     width: '100%',
     backgroundColor: '#748CAB',
-    paddingVertical: '5%',
+    paddingVertical: '10%',
     height: 60,
   },
   menuItem: {
