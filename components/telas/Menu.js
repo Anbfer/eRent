@@ -5,15 +5,12 @@ import {
   StyleSheet,
   TouchableOpacity,
   Image,
-  Dimensions,
-  SafeAreaView,
+  Dimensions
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
-
 const Menu = () => {
+
   const navigation = useNavigation();
 
   const irParaTela = (nomeTela) => {
@@ -22,8 +19,7 @@ const Menu = () => {
 
   return (
     <View style={styles.container}>
-
-        <View>
+        <View style={styles.container}>
           <Text style={styles.eRent}>E-Rent<Image style={styles.folha} source={require('../icones/Folha.png')}/></Text>
         </View>
         <View style={styles.menu}>
@@ -67,12 +63,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     width: '100%',
     backgroundColor: '#748CAB',
-    paddingVertical: 10,
+    paddingVertical: '5%',
     height: 60,
   },
   menuItem: {
-    width: windowWidth * 0.1,
-    height: windowWidth * 0.1,
+    width: 32,
+    height: 32,
   },
   eRent: {
     flex:1,
@@ -84,8 +80,8 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     display: 'flex',
     alignItems: 'center',
-    width: "100",
-    height: '100',
+    width: '100%',
+    height: '100%',
     backgroundColor:'#0D1321'
   },
   folha: {

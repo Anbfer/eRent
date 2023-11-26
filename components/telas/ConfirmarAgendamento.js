@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-nati
 import { useNavigation } from '@react-navigation/native';
 import { Calendar } from 'react-native-calendars';
 
-const Agendamentos = () => {
+const ConfirmarAgendamentos = () => {
 
   const navigation = useNavigation();
 
@@ -21,11 +21,11 @@ const Agendamentos = () => {
   };
 
   const cancelar = () => {
-    navigation.navigate('Tela Inicial');
+    navigation.navigate('Carros Disponiveis');
   };
 
   const proximo = () => {
-    navigation.navigate('Carros Disponiveis');
+    navigation.navigate('Pagamento');
   };
   return (
     <View style={styles.container}>
@@ -119,4 +119,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Agendamentos;
+export default ConfirmarAgendamentos;
